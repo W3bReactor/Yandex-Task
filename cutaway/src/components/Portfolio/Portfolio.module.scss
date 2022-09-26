@@ -1,0 +1,94 @@
+@import "../../assets/styles/variables";
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.introDark {
+  background-color: $heading-color;
+}
+.introLight {
+  background-color: #F5FCFF;
+}
+
+.introInner {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 466px;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.subTitle {
+  margin-bottom: 16px;
+}
+
+.text {
+  margin-bottom: 40px;
+
+  span {
+    color: $primary-color;
+  }
+}
+
+.react {
+  object-fit: cover;
+}
+
+.reactLight {
+  animation: 3s linear infinite spin;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.reactDark {
+  animation: 3s linear infinite spinContrast;
+}
+
+@keyframes spinContrast {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgInner {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.js {
+  margin-left: 20px;
+}

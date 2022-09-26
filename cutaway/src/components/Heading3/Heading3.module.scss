@@ -1,0 +1,15 @@
+@import "../../assets/styles/variables";
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+.titleDark {
+  color: $light-color;
+}
+
+.titleLight {
+  color: $heading-color;
+}
