@@ -1,7 +1,10 @@
 {
   "files": {
-    "main.css": "/Yandex-Task/static/css/main.86643b13.css",
-    "main.js": "/Yandex-Task/static/js/main.b8d00c92.js",
+    "main.css": "/Yandex-Task/static/css/main.5ccb4991.css",
+    "main.js": "/Yandex-Task/static/js/main.3bbe7644.js",
+    "static/js/175.cd3e9f32.chunk.js": "/Yandex-Task/static/js/175.cd3e9f32.chunk.js",
+    "static/css/797.93a7fb98.chunk.css": "/Yandex-Task/static/css/797.93a7fb98.chunk.css",
+    "static/js/797.6413bf89.chunk.js": "/Yandex-Task/static/js/797.6413bf89.chunk.js",
     "static/media/work-2.png": "/Yandex-Task/static/media/work-2.7e3a748a873442ff71bc.png",
     "static/media/work-1.png": "/Yandex-Task/static/media/work-1.9b9d12a00e009c1f5682.png",
     "static/media/me.png": "/Yandex-Task/static/media/me.8504c1df58d4687d2433.png",
@@ -11,11 +14,14 @@
     "static/media/work-3.png": "/Yandex-Task/static/media/work-3.3488fa549d081ade95d4.png",
     "static/media/react.png": "/Yandex-Task/static/media/react.212455b220497a8daad5.png",
     "index.html": "/Yandex-Task/index.html",
-    "main.86643b13.css.map": "/Yandex-Task/static/css/main.86643b13.css.map",
-    "main.b8d00c92.js.map": "/Yandex-Task/static/js/main.b8d00c92.js.map"
+    "main.5ccb4991.css.map": "/Yandex-Task/static/css/main.5ccb4991.css.map",
+    "main.3bbe7644.js.map": "/Yandex-Task/static/js/main.3bbe7644.js.map",
+    "175.cd3e9f32.chunk.js.map": "/Yandex-Task/static/js/175.cd3e9f32.chunk.js.map",
+    "797.93a7fb98.chunk.css.map": "/Yandex-Task/static/css/797.93a7fb98.chunk.css.map",
+    "797.6413bf89.chunk.js.map": "/Yandex-Task/static/js/797.6413bf89.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86643b13.css",
-    "static/js/main.b8d00c92.js"
+    "static/css/main.5ccb4991.css",
+    "static/js/main.3bbe7644.js"
   ]
 }
