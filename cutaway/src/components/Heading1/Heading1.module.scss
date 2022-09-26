@@ -1,46 +1,13 @@
 @import "../../assets/styles/variables";
 
-.header {
-  padding: 19px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  a {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-  }
-  ul {
-    display: flex;
-    align-items: center;
-    li {
-      &:not(:last-child){
-        margin-right: 32px;
-      }
-      a {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        transition: all 0.2s;
-        color: #1C1E53;
-
-        &:hover {
-          color: $primary-color;
-        }
-      }
-    }
-  }
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
 }
-
-.headerLight {
-  a {
-    color: $dark-color;
-  }
+.titleDark {
+  color: $light-color;
 }
-
-.headerDark {
-  a {
-    color: $light-color;
-  }
+.titleLight {
+  color: $heading-color;
 }
