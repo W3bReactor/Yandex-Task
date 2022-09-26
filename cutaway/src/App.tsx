@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import 'normalize.css';
 import './assets/styles/_fonts.scss';
 import './assets/styles/_global.scss';
 import classNames from 'classnames';
-import { Main } from './pages/Main';
 import { Route, Routes } from 'react-router-dom';
-import { FullWay } from './pages/FullWay';
 import { themes } from './redux/slices/settingsSlice/types';
 import { useAppSelector } from './redux/hooks';
 import { selectModalIsOpen } from './redux/slices/modalSlice/selectors';
@@ -13,7 +11,10 @@ import {
 	selectBurger,
 	selectTheme,
 } from './redux/slices/settingsSlice/selectors';
-import { Modal } from './components';
+import { MessageLoader, Modal } from './components';
+
+const Main = React.lazy(() => import('./pages/Main'));
+const FullWay = React.lazy(() => import('./pages/FullWay'));
 
 function App() {
 	const theme = useAppSelector(selectTheme);
@@ -28,10 +29,12 @@ function App() {
 		<>
 			{modalIsOpen && <Modal />}
 			<div className={cx}>
-				<Routes>
-					<Route path="/" element={<Main theme={theme} />} />
-					<Route path="/way" element={<FullWay theme={theme} />} />
-				</Routes>
+				<Suspense fallback={<MessageLoader />}>
+					<Routes>
+						<Route path="/" element={<Main theme={theme} />} />
+						<Route path="/way" element={<FullWay theme={theme} />} />
+					</Routes>
+				</Suspense>
 			</div>
 		</>
 	);

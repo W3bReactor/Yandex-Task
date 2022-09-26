@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
 import { About, Header, Intro, Portfolio, Way } from '../../components';
+import FullWay from '../FullWay';
 
 interface MainProps {
 	theme: string;
 }
 
-export const Main: FC<MainProps> = ({ theme }) => {
+const Main: FC<MainProps> = ({ theme }) => {
 	return (
 		<div>
 			<Header theme={theme} />
@@ -16,3 +17,5 @@ export const Main: FC<MainProps> = ({ theme }) => {
 		</div>
 	);
 };
+
+export default Main;

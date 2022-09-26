@@ -20,7 +20,7 @@ interface IMessage {
 }
 let messages: IMessage[] = [];
 
-export const FullWay: FC<FullWayProps> = ({ theme }) => {
+const FullWay: FC<FullWayProps> = ({ theme }) => {
 	const [index, setIndex] = useState<number>(0);
 	const [delay, setDelay] = useState<number>(0);
 	const ref = useRef<HTMLDivElement>(null);
@@ -135,3 +135,5 @@ export const FullWay: FC<FullWayProps> = ({ theme }) => {
 		</div>
 	);
 };
+
+export default FullWay;
